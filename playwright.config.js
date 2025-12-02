@@ -7,5 +7,9 @@ module.exports = defineConfig({
     headless: false,
     viewport: { width: 1280, height: 720 },
     baseURL: 'https://www.saucedemo.com/',
+    screenshot: 'only-on-failure', 
+    trace: 'on-first-retry',       
+    video: 'retain-on-failure',    
   },
+
 });

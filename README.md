@@ -1,37 +1,50 @@
-This project contains a small set of automated tests written using Playwright.
-The tests are created for the website https://www.saucedemo.com/
-Focus on basic actions such as logging in and adding an item to the cart.
-What this project does
-
-The automation includes:
-Login Test-
-Opens the SauceDemo website
-Enters username and password
-Logs into the application
-Confirms that the Products page is visible
-
-Add to Cart Test-
-Logs into the website
-Clicks the “Add to cart” button for the backpack item
-Opens the cart
-Confirms that the item appears inside the cart
-
-These tests show how to perform simple user actions like clicking, typing, and checking page content.
-
-Files this project contains- 
-pages/ → Contains reusable page objects
-tests/ → Contains the actual test scripts
-playwright.config.js → Basic Playwright configuration
-
-Steps to Run the tests-
-1. npm install
-2. npx playwright test login.spec.js --headed (The browser will open so you can watch the test steps happening.)
-3. npx playwright test login.spec.js --headed --debug (to run in debug mode)
-
-Tools Used
-1. Playwright (JavaScript)
-2. Node.js
-
-The SauceDemo test credentials used are:
-Username: standard_user
-Password: secret_sauce
+Playwright Automation Framework – SauceDemo (JavaScript)
+1. Introduction: This document describes a basic Playwright automation framework created for the website SauceDemo.
+The project demonstrates essential automated actions such as login, adding an item to the cart, and completing checkout.
+2. Objectives
+- Demonstrate UI automation using Playwright
+- Use Page Object Model (POM)
+- Automate full checkout flow
+- Use .env for test data
+- Generate screenshots and videos on failure
+- Run tests in CI/CD (GitHub Actions)
+3. Tools & Technologies
+- Playwright (JavaScript)
+- Node.js
+- Dotenv
+- GitHub Actions
+4. Project Structure
+demo-halo/
+pages/
+LoginPage.js
+ProductsPage.js
+tests/
+login.spec.js
+checkout.spec.js
+.env
+playwright.config.js
+package.json
+README.md
+5. Test Scenarios Covered
+- Login Test
+- Add to Cart Test
+- Checkout Flow
+6. Environment Variables (.env)
+USERNAME=standard_user
+PASSWORD=secret_sauce
+FIRST_NAME=Teena
+LAST_NAME=Dixit
+POSTAL_CODE=110001
+7. How to Run the Project
+npm install
+npx playwright install
+npx playwright test --headed
+8. Debugging Features
+- Screenshots on failure
+- Video recording
+- Trace viewer
+9. CI/CD – GitHub Actions
+Automated workflow to install dependencies, run tests, and upload reports.
+10. Summary
+This automation project demonstrates a simple, modular Playwright setup using POM,
+environment variables, debugging tools, and CI/CD integration.
