@@ -4,10 +4,8 @@ const { ProductsPage } = require('../pages/ProductsPage');
 require('dotenv').config();
 
 /**
- * This test is going to do login
- * After login we are adding a product in the cart
- * Then go to the cart
- * Do checkout 
+ * This test flow is going to do login, then add a product in the cart, 
+ * verify the checkout flow and after successful checkout verify the success message
  */
 test('Full checkout flow', async ({ page }) => {
   const login = new LoginPage(page);
