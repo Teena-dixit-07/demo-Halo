@@ -1,17 +1,20 @@
 class LoginPage {
   constructor(page) {
     this.page = page;
+
+    // Login page locators
     this.usernameField = '#user-name';
     this.passwordField = '#password';
     this.loginButton = '#login-button';
-    this.title = '//*[@id="header_container"]/div[2]/span'
-
+    this.title = '//span[@id="header_container"]/div[2]/span'
   }
-// This will hit the URL 
+
+// This will open the URL 
   async goto() {
     await this.page.goto('https://www.saucedemo.com/');
   }
-// This will fill in the login credentials and login 
+
+ // This will fill in the login credentials and login 
   async login() {
     await this.page.fill(this.usernameField, "standard_user");
     await this.page.fill(this.passwordField, "secret_sauce");
