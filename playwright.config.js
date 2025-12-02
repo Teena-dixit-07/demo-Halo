@@ -11,5 +11,9 @@ module.exports = defineConfig({
     trace: 'on-first-retry',       
     video: 'retain-on-failure',    
   },
+  reporter: [
+  ['html', { open: 'never' }]
+],
+
 
 });

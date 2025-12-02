@@ -45,6 +45,17 @@ npx playwright test --headed
 - Trace viewer
 9. CI/CD – GitHub Actions
 Automated workflow to install dependencies, run tests, and upload reports.
-10. Summary
+10. HTML Test Reports (Playwright)
+This project generates beautiful HTML reports automatically after every test run.
+The report includes:
+- Full test summary
+- Step-by-step execution
+- Screenshots on failure
+- Video recordings
+- Error logs & stack traces
+- Timeline & locator details
+HTML reporting is configured inside playwright.config.js
+Run this- npx playwright show-report (this will show the html  report)
+11. Summary
 This automation project demonstrates a simple, modular Playwright setup using POM,
 environment variables, debugging tools, and CI/CD integration.
