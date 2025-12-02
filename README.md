@@ -56,6 +56,8 @@ The report includes:
 - Timeline & locator details
 HTML reporting is configured inside playwright.config.js
 Run this- npx playwright show-report (this will show the html  report)
+<img width="1919" height="846" alt="Screenshot 2025-12-02 124132" src="https://github.com/user-attachments/assets/b61ac8ae-08ea-4f60-9b4e-8b237d492185" />
+
 11. Summary
 This automation project demonstrates a simple, modular Playwright setup using POM,
 environment variables, debugging tools, and CI/CD integration.
